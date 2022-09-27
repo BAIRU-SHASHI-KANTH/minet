@@ -1,7 +1,16 @@
 import React from "react";
 
-const avatar = () => {
-  return <div>avatar</div>;
-};
+interface AvatarProps {
+  children?: any;
+  src?: string;
+  alt?: string;
+}
 
-export default avatar;
+const Avatar= ({src,alt,children}: AvatarProps) => {
+  return (
+    <>
+    {/* Avatar from "@mui/material/Avatar" */}
+    </>
+  );
+};
+export default Avatar;

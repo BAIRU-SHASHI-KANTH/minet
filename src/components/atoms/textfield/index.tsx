@@ -1,7 +1,14 @@
-import React from "react";
+import * as React from "react";
 
-const TextField = () => {
-  return <div>TextField</div>;
+interface TextFieldProps {
+  children?: string;
+  placeholder?: string;
+}
+const TextField = ({children,placeholder}: TextFieldProps) => {
+  return (
+    <>
+    {/*TextField  from "@mui/material"*/}
+    </>
+  );
 };
-
 export default TextField;

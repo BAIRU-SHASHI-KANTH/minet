@@ -1,7 +1,9 @@
 import React from "react";
 
-const walletTransactonCard = () => {
-  return <div>walletTransactonCard</div>;
+const WalletTransactonCard = ({transactionData}) => {
+  return <div>
+    {/* display TransactionDetails using Grid component  */}
+    </div>;
 };
 
-export default walletTransactonCard;
+export default WalletTransactonCard;

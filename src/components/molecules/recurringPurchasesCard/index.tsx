@@ -1,7 +1,12 @@
+import Grid from "@mui/material/Grid";
 import React from "react";
 
-const recurringPurchasesCard = () => {
-  return <div>recurringPurchasesCard</div>;
+const RecurringPurchasesCard = ({ data }) => {
+  return (
+    <Grid container direction="row">
+      {/* icon and typographyTags */}
+    </Grid>
+  );
 };
 
-export default recurringPurchasesCard;
+export default RecurringPurchasesCard;
