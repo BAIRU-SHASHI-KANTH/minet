@@ -1,7 +1,14 @@
-import React from "react";
+import * as React from "react";
 
-const Icon = () => {
-  return <div>Icon</div>;
+type IconProps = {
+  src: string;
 };
+
+const Icon = ({src}: IconProps) => {
+  return 
+  <>
+  // react-svg tag using src
+  </>;
+}
 
 export default Icon;

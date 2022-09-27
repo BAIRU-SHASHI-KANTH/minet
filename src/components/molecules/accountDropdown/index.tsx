@@ -1,7 +1,16 @@
 import React from "react";
+import Avatar from "../../atoms/avatar";
 
-const accountDropdown = () => {
-  return <div>accountDropdown</div>;
+interface AccountDropdownProps {
+  avatarSrc: string;
+}
+const AccountDropdown = ({ avatarSrc }: AccountDropdownProps) => {
+  return (
+    <div>
+      <Avatar src={avatarSrc} />
+     {/* dropdown icon */}
+    </div>
+  );
 };
 
-export default accountDropdown;
+export default AccountDropdown;

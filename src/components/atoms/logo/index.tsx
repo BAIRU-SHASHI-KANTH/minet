@@ -1,7 +1,15 @@
 import React from "react";
 
-const Logo = () => {
-  return <div>Logo</div>;
+type LogoProps = {
+  src: string;
+  alt: string;
 };
 
+const Logo = ({src,alt}: LogoProps) => {
+  return (
+   <>
+   {/* img tag with LogoProps */}
+   </>
+  );
+};
 export default Logo;

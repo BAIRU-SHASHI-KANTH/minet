@@ -1,7 +1,9 @@
 import React from "react";
 
-const tradeCard = () => {
-  return <div>tradeCard</div>;
+const TradeCard = ({tradeCardDetails}) => {
+  return <div>
+    {/*map the tradeCardDetails using card component*/}
+  </div>;
 };
 
-export default tradeCard;
+export default TradeCard;

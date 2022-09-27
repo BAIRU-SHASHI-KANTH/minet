@@ -1,7 +1,10 @@
 import React from "react";
 
-const paymentCard = () => {
-  return <div>paymentCard</div>;
+
+const PaymentCard = ({paymentCardDetails}) => {
+  return <div>
+    {/* map details using radio button for different payment options */}
+  </div>;
 };
 
-export default paymentCard;
+export default PaymentCard;

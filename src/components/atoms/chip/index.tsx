@@ -1,7 +1,15 @@
 import React from "react";
 
-const Chip = () => {
-  return <div>Chip</div>;
+type ChipProps = {
+  label: string;
+};
+
+const Chip = ({label}: ChipProps) => {
+  return (
+    <>
+    {/* Chip from "@mui/material/Chip" */}
+    </>
+  );
 };
 
 export default Chip;
