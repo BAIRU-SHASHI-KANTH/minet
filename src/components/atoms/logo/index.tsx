@@ -7,9 +7,7 @@ type LogoProps = {
 
 const Logo = ({src,alt}: LogoProps) => {
   return (
-   <>
-   {/* img tag with LogoProps */}
-   </>
+   <img src={src} alt={alt}/>
   );
 };
 export default Logo;

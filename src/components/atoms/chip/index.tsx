@@ -2,13 +2,12 @@ import React from "react";
 
 type ChipProps = {
   label: string;
+  variant : "outlined" | "filled"
 };
 
-const Chip = ({label}: ChipProps) => {
+const Chip = ({label,variant}: ChipProps) => {
   return (
-    <>
-    {/* Chip from "@mui/material/Chip" */}
-    </>
+    <Chip label={label} variant={variant}/>
   );
 };
 
