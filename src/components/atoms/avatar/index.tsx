@@ -1,4 +1,5 @@
 import React from "react";
+import {Avatar as MuiAvatar} from "@mui/material"
 
 interface AvatarProps {
   children?: any;
@@ -8,9 +9,7 @@ interface AvatarProps {
 
 const Avatar= ({src,alt,children}: AvatarProps) => {
   return (
-    <>
-    {/* Avatar from "@mui/material/Avatar" */}
-    </>
+    <MuiAvatar src={src} alt={alt}>{children}</MuiAvatar>
   );
 };
 export default Avatar;

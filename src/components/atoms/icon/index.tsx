@@ -5,10 +5,7 @@ type IconProps = {
 };
 
 const Icon = ({src}: IconProps) => {
-  return 
-  <>
-  // react-svg tag using src
-  </>;
+  return <img src={src} />;
 }
 
 export default Icon;

@@ -1,15 +1,28 @@
 import { Grid } from "@mui/material";
 import React from "react";
+import Button from "../../atoms/button";
+import TypographyTag from "../../atoms/typographyTag";
 import AccountDropDown from "../../molecules/accountDropdown";
 
-interface HeaderProps {
-    accountDetails:object[]
+interface Account {
+  src: string;
+  username: string;
 }
-const Header = ({accountDetails}) => {
+
+interface HeaderProps {
+  accountDetails: Account;
+}
+const Header = ({ accountDetails }: HeaderProps) => {
   return (
-    <Grid container direction="row">
-      {/* button components for buy and sell options
-        accountDropDown */}
+    <Grid container direction="row" justifyContent="space-around">
+      <Grid item>
+        <TypographyTag variant="h4">Dashboard</TypographyTag>
+      </Grid>
+      <Grid item>
+        <Button>SELL</Button>
+        <Button>BUY</Button>
+        <AccountDropDown avatarSrc={accountDetails.src} />
+      </Grid>
     </Grid>
   );
 };

@@ -1,13 +1,14 @@
 import * as React from "react";
+import {TextField as MuiTextField} from "@mui/material";
 
 interface TextFieldProps {
-  children?: string;
-  placeholder?: string;
+  placeholder?: string,
+  handleChange: (event:React.ChangeEvent<HTMLInputElement>)=>{},
 }
-const TextField = ({children,placeholder}: TextFieldProps) => {
+const TextField = ({handleChange,placeholder}: TextFieldProps) => {
   return (
     <>
-    {/*TextField  from "@mui/material"*/}
+    <MuiTextField placeholder={placeholder} onChange={handleChange}></MuiTextField>
     </>
   );
 };

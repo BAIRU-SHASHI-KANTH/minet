@@ -1,12 +1,28 @@
 import { Grid } from "@mui/material";
 import React from "react";
+import Avatar from "../../atoms/avatar";
+import TypographyTag from "../../atoms/typographyTag";
 
-const PortfolioCard = ({ cardDetails }) => {
+interface card {
+  src: string;
+  type: string;
+  value: string;
+}
+interface PortfolioCardProps {
+  cardDetails: card[];
+}
+const PortfolioCard = ({ cardDetails }: PortfolioCardProps) => {
   return (
     <Grid container direction="row" justifyContent="flex-start">
-      {/* avatar with CardDetails.src
-   typographyTag with CardDetails.CurrenctType 
-   typographyTag with CardDetails.CurrencyValue */}
+      {cardDetails.map(({ src, type, value }, index) => {
+        return (
+          <Grid item key={index}>
+            <Avatar src={src} />
+            <TypographyTag variant="body1">{type}</TypographyTag>
+            <TypographyTag variant="subtitle1">{value}</TypographyTag>
+          </Grid>
+        );
+      })}
     </Grid>
   );
 };
